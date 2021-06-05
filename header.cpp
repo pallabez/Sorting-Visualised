@@ -9,8 +9,7 @@ void scrambleInputLinear(int input[], int size) {
         input[i] = i + 1;
     }
 
-    for(int i = 0; i < size * 2; i++) {
-        
+    for(int i = 0; i < size * 2; i++) { 
         int random = eng() % size;
         int random2 = eng() % size;
 

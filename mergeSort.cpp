@@ -24,6 +24,7 @@ void displayMergeSort(int input[], int size, int fullInput[], int fullSize) {
 			input[index] = output[j];
 			j++;
 		}
+        
 		index++;
 	}
 

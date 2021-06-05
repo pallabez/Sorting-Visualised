@@ -40,5 +40,6 @@ int main() {
 
     scrambleInputLinear(input, size);
     displayQuickSort(input, size, input, size);
+    
     printState(input, size);
 }
