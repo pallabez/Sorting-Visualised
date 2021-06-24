@@ -14,10 +14,7 @@ void displayBubbleSort(int *array, int num) {
 
 int main() {
     int size;
-    std::cin >> size;
-
-    int *input = new int[size];
-
-    scrambleInputLinear(input, size);
+    int *input;
+    setUp(size, input);
     displayBubbleSort(input, size);
 }

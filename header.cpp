@@ -42,3 +42,11 @@ void swap(int input[], int index1, int index2) {
     input[index2] = input[index1];
     input[index1] = temp;
 }
+
+void setUp(int size, int input[]) {
+    std::cout << "Enter size of the array: ";
+    std::cin >> size;
+    input = new int[size];
+
+    scrambleInputLinear(input, size);
+}

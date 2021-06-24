@@ -20,10 +20,7 @@ void displaySelectionSort(int input[], int size) {
 
 int main() {
     int size;
-    std::cin >> size;
-
-    int *input = new int[size];
-
-    scrambleInputLinear(input, size);
+    int *input;
+    setUp(size, input);
     displaySelectionSort(input, size);
 }

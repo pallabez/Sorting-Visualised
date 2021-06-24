@@ -34,11 +34,9 @@ void displayQuickSort(int input[], int size, int fullInput[], int fullSize) {
 
 int main() {
     int size;
-    std::cin >> size;
-
-    int *input = new int[size];
-
-    scrambleInputLinear(input, size);
+    int *input;
+    setUp(size, input);
+    
     displayQuickSort(input, size, input, size);
     
     printState(input, size);
