@@ -15,6 +15,11 @@ void displayBubbleSort(int *array, int num) {
 int main() {
     int size;
     int *input;
-    setUp(size, input);
+    
+    std::cout << "Enter size of the array: ";
+    std::cin >> size;
+    input = new int[size];
+
+    scrambleInputLinear(input, size);
     displayBubbleSort(input, size);
 }

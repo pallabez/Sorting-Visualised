@@ -35,7 +35,11 @@ void displayMergeSort(int input[], int size, int fullInput[], int fullSize) {
 int main() {
     int size;
     int *input;
-    setUp(size, input);
+    std::cout << "Enter size of the array: ";
+    std::cin >> size;
+    input = new int[size];
+
+    scrambleInputLinear(input, size);
 	
     displayMergeSort(input, size, input, size);
     printState(input, size);
